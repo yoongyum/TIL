@@ -9,6 +9,7 @@ $ git push origin master
 
 ###Commit Convention
 
+```shell
 feat: features
 docs: documentations
 conf: configurations
@@ -18,7 +19,7 @@ refactor: refactoring
 ci: Continuous Integration
 build: Build
 perf: Performance
-
+```
 
 
 ###init
