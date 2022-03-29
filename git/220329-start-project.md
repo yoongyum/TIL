@@ -1,4 +1,4 @@
-#git push
+# git push
 
 
 ```shell
@@ -8,7 +8,7 @@ $ git push origin master
 ```
 
 
-###Commit Convention
+## Commit Convention
 
 
 ```shell
@@ -24,7 +24,7 @@ perf: Performance
 ```
 
 
-###init
+## init
 
 
 ```shell
