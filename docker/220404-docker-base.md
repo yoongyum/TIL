@@ -11,7 +11,6 @@ $ sudo reboot
 ## 도커 기본 명령
 
 ### 컨테이너 실행
----
 ```
 $ docker run docker/whalesay cowsay 'hello world'
 ```
