@@ -2,7 +2,7 @@
 
 # 도커 설치
 
-```
+```shell
 $ sudo apt update && sudo apt install -y docker.io net -tools
 $ sudo usermod -aG docker $USER
 
@@ -13,7 +13,7 @@ $ sudo reboot
 
 ## 컨테이너 실행
 
-```
+```bash
 $ docker run docker/whalesay cowsay 'hello world'
 ```
 
