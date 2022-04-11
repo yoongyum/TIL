@@ -16,7 +16,7 @@ public class Company{
   private Company(){
 
   }
-  public static Company getInstance(){
+  public static Company getInstance(){  //이 메소드를 통해서만 객체를 생성할 수 있기 때문에 static으로 선언한다.
       if( instance == null){
           instance = new Company();
       }
