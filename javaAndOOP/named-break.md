@@ -3,13 +3,8 @@
 
 ### 예제 코드
 ```java
-public class Break{
-  public static main(String[] args){
     outer: for(int i=0;i<100;i++){
       for(int j =0; j < 100;j++){
         if( j == 30) break outer;
       }
-    }
-  }
-}
 ```
