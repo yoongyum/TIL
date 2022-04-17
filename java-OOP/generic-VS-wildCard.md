@@ -11,13 +11,16 @@
 ```java
 class 클래스명 <T>{
   T element;
-  void setElement(T element){
+  T getElement(){ //getter 
+    return element; 
+  }
+  void setElement(T element){//setter
     this.element = element;
   }
-  T getElement(){ return element; }
+
 }
 ```
-<T> 에서 T를 타입변수(type variable)이라고 합니다. 관례적으로 T를 많이쓰지만 어떠한 문자를 사용해도 상관없으며 여러 타입 경우 쉼표로 구분합니다.
+`<T>` 에서 T를 타입변수(type variable)이라고 합니다. 관례적으로 T를 많이쓰지만 어떠한 문자를 사용해도 상관없으며 여러 타입 경우 쉼표(<K, V>)로 구분합니다.
   
 주로 사용하는 타입 매개변수
   ```
@@ -28,7 +31,7 @@ class 클래스명 <T>{
   ```
   
 > 타입변수 자리에는 기본타입(int, char 등)을 바로 사용할 수 없습니다.
-  Integer, Charactor 등과 같이 래퍼클래스로 바꿔서 사용해야합니다.
+  따라서 기본타입을 넣으려면 Integer, Charactor 등과 같이 래퍼클래스로 바꿔서 사용해야합니다.
   
   
  <br>

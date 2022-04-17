@@ -8,3 +8,15 @@
         if( j == 30) break outer;
       }
 ```
+<br>
+
+## continue도 된다.
+go-loop랑 비슷하다고 생각하시면 됩니다.
+
+
+```java
+    outer: for(int i=0;i<100;i++){
+      for(int j =0; j < 100;j++){
+        if( j == 30) continue outer;
+      }
+```
