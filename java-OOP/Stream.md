@@ -42,7 +42,7 @@ Arrays.stream(arr).forEach(n->System.out.print(n));
 ```java
 int [] arr = {1, 2, 3, 4, 5};
 
-Stream s = Arrays.stream(arr);
+IntStream s = Arrays.stream(arr);
 
 s.forEach(n->System.out.print(n));
 ```
