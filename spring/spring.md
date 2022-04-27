@@ -39,3 +39,20 @@ Spring에서는 객체(Object)를 Bean이라고 한다.
   스프링에서는 각각의 dependency들의 호환되는 버전을 일일이 맞춰야 했지만, 스프링부트에서는 starter가 관리로 version관리의 편리함.
  4. XML설정차이
  5. jar file을 이용해 자바 옵션만으로 쉽게 배포가능
+
+<br>
+
+## gradle
+그냥 버전 설정하고 라이브러리 땡겨오는 것 정도만 이해
+
+### build
+
+콘솔로 접속
+```shell
+./gradle build # ./gradle clean build
+cd build
+cd libs
+ls -arlth #jar 파일 확인
+
+java -jar {snapshot.jar}
+```
