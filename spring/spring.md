@@ -56,3 +56,47 @@ ls -arlth #jar 파일 확인
 
 java -jar {snapshot.jar}
 ```
+
+## Spring Bean
+
+Spring Ioc 컨테이너가 관리하는 자바 객체를 Bean이라고 부릅니다.
+Spring에서는 직접 new를 이용하여 객체를 생성하지 않고, Spring에 의하여 관리당하는 자바 객체를 사용합니다.
+
+Spring에 의하여 생성되고 관리되는 자바 객체를 Bean이라고 합니다.
+
+생성자 주입이 가장 좋다고 한다.
+
+### Bean 장점
+- 의존성 관리 용의
+- Bean에 등록된 객체는 기본적으로 싱글톤으로 정해진다.
+- 라이프 사이클 인터페이스를 지원해준다.
+
+### Spring Bean을 등록하는 방법
+
+#### 1. Annotation을 사용하는 방법
+Annotation은 자바 소스 코드에 추가하여 사용할 수 있는 메타데이터의 일종입니다.
+소스코드에 추가하면 단순 주석의 기능을 하는 것이 아니라 특별한 기능을 사용할 수 있습니다.
+
+Spring에서는 여러 가지 Annotation을 사용하지만, Bean을 등록하기 위해서는
+<span style="color:lime">@Component Annotation</span>을 사용합니다.
+
+@Component Annotation이 등록이 되어있는 경우에는 Spring이 Annotation을 확인하고 자동으로 Bean으로 등록합니다.
+(메인패키지경로 설정을 주의 하셔야 합니다.)
+
+**@Component Annotation종류**
+- @Controller
+- @Service
+- @Repository
+
+#### 2. Bean Configuration File에 직접 등록하는 방법
+
+@Configuration 과 @Bean Annotation을 사용하여 Bean을 등록할 수 있습니다.
+
+@Configuration을 이용하면 Spring Project에서의 Configuration을 하는 Class를 지정합니다.
+해당 File 하위에 Bean으로 등록하고자 하는 Class에 @Bean을 사용해주면 간단하게 등록이 됩니다.
+
+
+
+
+
+
