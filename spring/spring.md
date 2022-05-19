@@ -29,7 +29,7 @@ Spring에서는 객체(Object)를 Bean이라고 한다.
 
 ### AOP (Apect-Oriented Programming) : 관점지향 프로그래밍
 관점지향은 어떤로직을 기준으로 핵심적인 관점, 부가적인 관점으로 나누어서 보고 그 관점을 기준으로 각각 모듈화 하겠다는 것입니다.
-
+cross-cutting concern VS core concern 분리
 
 <br>
 
@@ -106,4 +106,30 @@ Spring에서는 여러 가지 Annotation을 사용하지만, Bean을 등록하�
 
 
 
+## Spring MVC
+Model, View, controller로 구분하되, model에서 DAO, DTO, Service로 나뉩니다.
+
+
+### MVC구조 데이터흐름
+1. REST API에 의해서 URL호출받음
+2. Controller가 요청사항 파악
+3. 상속받고 있는 서비스가 비즈니스 로직을 수행
+4. 서비스는 해당 로직을 처리하기 위해 DAO에 메소드를 호출
+5. DAO는 DB에 접근해서 데이터를 조작한 뒤 쿼리결과를 다시 서비스에 전달
+6. 다시 서비스는 View에게 데이터나 최종결과를 리턴
+7. 달라진 View를 사용자에게 보여짐
+
+### Controller
+클라이언트에 요청이 들어오면, 해당 요청을 수행할 비즈니스 로직을 제어
+
+### Service
+세분화된 비즈니스 로직을 처리하는 객체
+DAO로 DB에 접근한 뒤, DTO로 데이터를 전달받은 후 로직을 수행한 결과를 반환
+### DAO (Data Access Object)
+DB에 접근하는 객체
+CRUD기능
+
+### DTO (Data Transfer) or VO (Value Object)
+각 계층간 데이터 교환을 위한 자바 객체
+getter, setter만 보유
 
