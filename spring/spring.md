@@ -120,11 +120,15 @@ Model, View, controller로 구분하되, model에서 DAO, DTO, Service로 나뉩
 7. 달라진 View를 사용자에게 보여짐
 
 ### Controller
-클라이언트에 요청이 들어오면, 해당 요청을 수행할 비즈니스 로직을 제어
+웹이나 앱같은 클라이언트의 요청을 받아서 처리하는 기능
 
 ### Service
-세분화된 비즈니스 로직을 처리하는 객체
+비즈니스 로직을 수행하는 기능
 DAO로 DB에 접근한 뒤, DTO로 데이터를 전달받은 후 로직을 수행한 결과를 반환
+
+### Repository
+수행결과를 데이터베이스에 보관하고 관리하는 기능
+
 ### DAO (Data Access Object)
 DB에 접근하는 객체
 CRUD기능
